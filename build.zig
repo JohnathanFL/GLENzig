@@ -4,7 +4,7 @@ const builtin = @import("builtin");
 pub fn build(b: *Builder) void {
     const mode = b.standardReleaseOptions();
 
-    const exe = b.addExecutable("Methuka-zig", "src/main.zig");
+    const exe = b.addExecutable("GLENzig", "src/main.zig");
     exe.setBuildMode(builtin.Mode.Debug);
     exe.addIncludeDir("/usr/include");
     exe.addIncludeDir("src/");

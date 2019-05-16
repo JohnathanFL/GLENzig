@@ -184,7 +184,7 @@ pub fn main() anyerror!void {
     var u = Vec3 {
         .data = [3]f32{0.0, 0.0, 0.0}
     };
-    _ = v.cross(u);
+    //_ = v.cross(u);
     var vox = Voxel.Air;
     std.debug.warn("{}", @intCast(u64, @sizeOf(Voxel)));
 
